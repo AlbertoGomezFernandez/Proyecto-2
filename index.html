@@ -1,13 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto 2 VITE</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="icon" href="./src/assets/My Logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="./src/assets/My Logo.png" alt="logo">
+      <h1>MyPC.Com</h1>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="filter">
+      <h2>Filtros:</h2>
+
+      <h3>Por vendedores</h3>
+
+      <select name="sellerFilter" id="sellerFilter" title="filter">
+        <option value="seller">---</option>
+      </select>
+
+      <h3>Por precio:</h3>
+
+      <input type="number" placeholder="Precio" name="price" id="price">
+
+      <button type="button" id="priceButton">Buscar</button>
+
+      <button type="button" id="resetButton">Limpiar filtros</button>
+    </section>
+
+    <article class="products">
+      <div class="notFound hide">
+        <p>Lo sentimos no hay producto para este filtro</p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>Alberto Gomez. 2023</p>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>
